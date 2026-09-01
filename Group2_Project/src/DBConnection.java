@@ -27,7 +27,6 @@ public class DBConnection
         }
     }
 
-    // Method to create the database if it does not exist
     public boolean createDatabaseIfNotExists() 
     {
         try (Connection conn = DriverManager.getConnection(DB_URL_WITHOUT_DB, USERNAME, PASSWORD); Statement stmt = conn.createStatement()) {
@@ -48,14 +47,12 @@ public class DBConnection
         }
     }
 
-    // Method to get the connection to the database
     public static Connection getConnection() throws SQLException 
     {
         return DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
     }
 
-    // Method to close the connection
-    public static void disconnect() throws SQLException
+    public void disconnect() 
     {
         try 
         {
