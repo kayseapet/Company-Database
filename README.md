@@ -1,5 +1,5 @@
 # SWD_Project
-minimal working UX for a basic employee management system that views and edits an SQL Database. For my version of the code, I'll reference my Overall System Class Design I made last week which is **[linked here](https://drive.google.com/file/d/1bEghChzuARn_BvTZYzCXcTf7XyYA955a/view?usp=drive_link)**
+Command-line interface employee management system that views and edits an SQL Database. For the code, I'll reference my Overall System Class Design **[linked here](https://drive.google.com/file/d/1bEghChzuARn_BvTZYzCXcTf7XyYA955a/view?usp=drive_link)**
 
 ## Functionality Requirements (MANDATORY)
 
@@ -15,13 +15,11 @@ minimal working UX for a basic employee management system that views and edits a
   4. Update employees' salary for an increase of a particular percentage only for a salary amount range. (EX: 3.2% for salary range 58k - 105k).
 
 ## Programming Tasks
-
-- IDK what EXACTLY she meant by 'programming tasks', but here are the elements of the programming that need to be tested, say the system is fully complete
-  1. Main class funtionality
-    - This class is where the Menu Options are displayed, and the user decides what feature they'd like to interact with in the system (viewing the database, editing the database, or generating a report). This class is also where the program receives needed input from the user to execute functions, and then imports those values into the InputHandler Class.
-    - To complete this, we make a Menu for each table (Employee, Job_title, Division, PayStament), ask the user how they'd like to interact with that table, and request needed input if that's required. The user should also be able to go back to the previous menu or exit the system at any point.
+  1. Main class functionality
+    - This class is where the Menu Options are displayed, and the user decides what feature they'd like to interact with in the system (viewing the database, editing the database, or generating a report). This class also receives the input needed to execute functions and passes those values to the InputHandler Class.
+    - To complete this, we make a Menu for each table (Employee, Job_title, Division, PayStatement), ask the user how they'd like to interact with that table, and request needed input if that's required. The user should also be able to go back to the previous menu or exit the system at any point.
     - **To Test:**  unit tests where each option is tried, and we ensure that the user input is correctly interpreted/saved to be processed in InputHandler.
   <br>
 
   2. InputHandler
-   - This is the central class where all the actual functions/commands are taken from the user, and processed as Java commands to execute. **Before Making this Class**, we need to make class objects of the Table elements ((Employee, Job_title, Division, PayStament) reference the class diagram to this step.
+   - This is the central class where all the actual functions/commands are taken from the user and processed as Java commands to execute. **Before Making this Class**, we need to make class objects of the Table elements ((Employee, Job_title, Division, PayStament) reference the class diagram to this step.
