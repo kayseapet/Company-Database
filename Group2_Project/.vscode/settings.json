@@ -1,7 +1,32 @@
 {
-    "java.project.sourcePaths": ["src"],
+    "java.project.sourcePaths": [
+        "src",
+        "test"
+    ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "lib/**/*.jar"
-    ]
+        "c:\\Users\\Kayla\\Documents\\GitHub\\SWD_Project\\Group2_Project\\lib\\junit-4.13.2.jar",
+        "c:\\Users\\Kayla\\Documents\\GitHub\\SWD_Project\\Group2_Project\\lib\\mysql-connector-j-8.2.0.jar",
+        "c:\\Users\\Kayla\\Documents\\GitHub\\SWD_Project\\Group2_Project\\lib\\hamcrest-core-1.3.jar"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "username": "root",
+            "database": "employee_db",
+            "name": "connect1"
+        }
+    ],
+    "java.format.settings.url": ".vscode/java-formatter.xml",
+    "[java]": {
+        "editor.insertSpaces": false
+    }
 }
