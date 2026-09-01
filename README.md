@@ -1,5 +1,6 @@
 # SWD_Project
-minimal working UX for a basic employee management system that views and edits an SQL Database. For my version of the code, I'll reference my Overall System Class Design I made last week which is **[linked here](https://drive.google.com/file/d/1bEghChzuARn_BvTZYzCXcTf7XyYA955a/view?usp=drive_link)**
+minimal working UX for a basic employee management system that views and edits an SQL Database. For my version of the code, I'll reference my Overall System Class Design I made last week:
+![Class Diagram, Also available in the Dev Diagrams folder.](<Development Diagrams/ClassDiagram.pdf>)
 
 ## Functionality Requirements (MANDATORY)
 
