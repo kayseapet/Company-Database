@@ -14,7 +14,7 @@ public class DBConnection {
     {
         try
         {
-            //Load H2 Driver
+            //load H2 Driver
             Class.forName("org.h2.Driver");
         }
         catch(ClassNotFoundException e)
@@ -32,17 +32,17 @@ public class DBConnection {
     // Method to close the connection
     public static void disconnect() throws SQLException {
         try {
-            // Check if the connection exists and is currently open
+            // check if the connection exists and is currently open
             if (connection != null && !connection.isClosed()) {
                 connection.close();
-                // Important: Set to null so the next getConnection() call 
+                // set to null so the next getConnection() call 
                 // knows it needs to create a brand new connection.
                 connection = null; 
                 System.out.println("Disconnected from H2 database.");
             }
         } catch (SQLException e) {
             System.err.println("Error closing H2 database connection: " + e.getMessage());
-            throw e; // Rethrow to let the caller (like a JUnit test) know it failed
+            throw e; // rethrow to let the caller (like a JUnit test) know it failed
         }
     }
 }

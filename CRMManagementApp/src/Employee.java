@@ -24,7 +24,7 @@ public class Employee {
         this.division = division;
         this.salary = salary;
         this.fullTime = fullTime;
-        //this.payStatements = new ArrayList<>();
+        this.payStatements = new ArrayList<>();
     }
 
     public int getEmpId() {

@@ -65,7 +65,6 @@ public class InputHandler {
         double amount = Main.requestDouble("Enter Pay Statement Amount: ");
         LocalDate startDate = Main.requestDate("Enter Pay Statement Start Date: ");
         LocalDate endDate = Main.requestDate("Enter Pay Statement End Date: ");
-        
         // Create a PayStatement object and return it
         return new PayStatement(empId, amount, startDate, endDate);
     }

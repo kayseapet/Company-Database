@@ -114,7 +114,7 @@ public class Main {
         }
     }
 
-    
+
     // To request to edit an Employee's info
     private void printEditMenu()
     {
@@ -127,6 +127,7 @@ public class Main {
     {
         
     }
+    
 
 
     // Report Menu: displays the options for generating reports, and calls the ReportGenerator class to generate
@@ -201,8 +202,10 @@ public class Main {
     }
 
     public static int requestInt(String prompt) {
+        
         System.out.print(prompt);
         while (!scanner.hasNextInt()) {
+            System.out.println("Invalid input. Please only enter whole numbers.");
             scanner.next(); // Clear invalid
             System.out.print(prompt);
         }
